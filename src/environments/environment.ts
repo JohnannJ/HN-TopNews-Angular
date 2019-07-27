@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'https://hacker-news.firebaseio.com/v0/',
+  firebaseConfig : {
+    apiKey: 'AIzaSyD51iucCuzyVlbJjSeWe_Fjw78TOWo9fhc',
+    authDomain: 'hacker-news-d5eb2.firebaseapp.com',
+    databaseURL: 'https://hacker-news-d5eb2.firebaseio.com',
+    projectId: 'hacker-news-d5eb2',
+    storageBucket: '',
+    messagingSenderId: '897111758546',
+    appId: '1:897111758546:web:534cd381c764c71d'
+  }
+
 };
 
 /*
