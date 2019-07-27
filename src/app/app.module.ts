@@ -14,7 +14,14 @@ import { PostItemComponent } from './posts/post-item/post-item.component';
 
 import { DataViewModule} from 'primeng/dataview';
 import { DropdownModule } from 'primeng/dropdown';
+import { PanelModule } from 'primeng/panel';
+import { DialogModule } from 'primeng/dialog';
 import { NavComponent } from './nav/nav.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {ButtonModule} from 'primeng/button';
+
 import { PostsService } from './_services/posts.service';
 
 
@@ -33,8 +40,15 @@ import { PostsService } from './_services/posts.service';
       HttpClientModule,
       AngularFireModule.initializeApp(environment.firebaseConfig),
       AngularFireDatabaseModule,
+      FontAwesomeModule,
       DropdownModule ,
-      DataViewModule
+      DataViewModule,
+      FormsModule,
+      ReactiveFormsModule,
+      NgxSpinnerModule,
+      PanelModule,
+      DialogModule,
+      ButtonModule
    ],
    providers: [PostsService],
    bootstrap: [

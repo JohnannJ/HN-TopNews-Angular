@@ -24,7 +24,7 @@ export class PostsService {
 
   getPostsCache() {
     if (!this.ids) {
-      this.http.get(this.baseUrl + 'topPosts.json').pipe(
+      this.http.get(this.baseUrl + 'topstories.json').pipe(
         map(data => (this.ids = data)),
         publishReplay(1), // this tells Rx to cache the latest emitted
         refCount()
@@ -62,10 +62,10 @@ export class PostsService {
   }
 
   getTopPosts(): Observable<number[]> {
-    return this.http.get<number[]>(this.baseUrl + 'topPosts.json');
+    return this.http.get<number[]>(this.baseUrl + 'topstories.json');
   }
 
   getPost(id: number): Observable<Post> {
-    return this.http.get<Post>(this.baseUrl + 'post/' + id + '.json');
+    return this.http.get<Post>(this.baseUrl + 'item/' + id + '.json');
   }
 }

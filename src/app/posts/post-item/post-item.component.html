@@ -1,3 +1,7 @@
-<p>
-  post-item works!
-</p>
+<div *ngIf="post">
+  <a href="{{post.url}}" target="_blank" class="title">
+    {{post.title}}
+  </a>
+  <span> By {{post.by}}</span>
+</div>
+
