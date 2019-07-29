@@ -6,6 +6,9 @@
   <p-header>Top Stories </p-header>
   <ng-template let-postId pTemplate="listItem">
     <div class="ui-g" style="padding: 0.5em;border-bottom: 1px solid #d9d9d9">
+      <div class="ui-g-12 ui-md-1 search-icon">
+        <button pButton type="button" icon="pi pi-search" (click)="selectPost($event, postId)"></button>
+      </div>
       <app-post-item postId="{{postId}}"></app-post-item>
       <div class="ui-g-12 ui-md-1 search-icon">
         <button pButton type="button" icon="pi pi-search" (click)="selectPost($event, postId)"></button>

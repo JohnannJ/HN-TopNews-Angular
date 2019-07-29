@@ -13,7 +13,7 @@ export class PostListComponent implements OnInit {
 
   posts: Post[] = [];
   postIds: number[] = [];
-  
+
   selectedPost: Post;
   displayDialog: boolean;
   sortOptions: SelectItem[];
@@ -48,7 +48,9 @@ export class PostListComponent implements OnInit {
     event.preventDefault();
   }
 
-  
+  getPosts() {
+    this.postService.getTopPosts().subscribe(data => this.postIds = data);
+  }
 
   onSortChange(event) {
     const value = event.value;

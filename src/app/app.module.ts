@@ -20,7 +20,7 @@ import { NavComponent } from './nav/nav.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {ButtonModule} from 'primeng/button';
+import { ButtonModule } from 'primeng/button';
 
 import { PostsService } from './_services/posts.service';
 
